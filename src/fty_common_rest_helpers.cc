@@ -101,13 +101,14 @@ std::map <std::string, std::string> systemctl_service_names = {
     { "ipc-meta-setup", "" },
     { "fty-sensor-env", "" },
     { "fty-sensor-gpio", "" },
-    { "fty-nut-configurator", "" },
+    { "fty-nut-configuration", "" },
     { "fty-metric-compute", "" },
     { "fty-metric-ambient-location", ""},
     { "fty-alert-flexible", "" },
     // legacy compatibility
     { "bios-agent-smtp", "fty-email" },
     { "bios-agent-rt", "fty-metric-cache" },
+    { "fty-nut-configurator", "fty-nut-configuration" },
     // added value agents / generic name
     { "etn-licensing", "" }
 };
