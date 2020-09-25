@@ -113,7 +113,7 @@ static constexpr const _WSErrors _errors = { {
 
 constexpr bool _strcmp(char const * a, char const * b)
 {
-    return *a == *b && (*a == '\0' || _strcmp(a + 1, b + 1));
+    return (*a && *b) ? (*a == *b && _strcmp(a + 1, b + 1)) : (!*a && !*b);
 }
 
 template <size_t N>
